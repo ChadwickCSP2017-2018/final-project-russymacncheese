@@ -1,4 +1,4 @@
-# cityscroller-student
+# City Scroller Assignment
 In order to ease the development process you will want to install [atom-beautify](https://atom.io/packages/atom-beautify#usage)
 
 Run this command in Terminal to install
@@ -13,4 +13,4 @@ This will create a Processing file that is linked to your javascript file. Any c
 
 **ONLY MAKE CHANGES TO cityScroller.js**
 
-[Project Description] (https://docs.google.com/document/d/1Vv7TAn-_sxPSjA6lv_ACV7W6QJHONLqpRuDaeFO7zgk/edit?usp=sharing)
+[Project Description](https://docs.google.com/document/d/1Vv7TAn-_sxPSjA6lv_ACV7W6QJHONLqpRuDaeFO7zgk/edit?usp=sharing)
