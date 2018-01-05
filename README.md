@@ -11,7 +11,10 @@ You'll also need to create a cityScroller.pde. In your directory run this comman
 
 This will create a Processing file that is linked to your javascript file. Any changes you make to your javascript file will also be made to the Processing file.
 
+**DO NOT COMMIT cityScroller.pde**
+
 **ONLY MAKE CHANGES TO cityScroller.js**
+
 
 To view the output of the template open `index.html`. Google Chrome and Safari seem to have problem with loading a separate pde file so you should use [Firefox](https://www.mozilla.org/en-US/firefox/new/) to check your output. 
 
