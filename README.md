@@ -39,6 +39,8 @@ You will need to change the `host` port to something other than `8888`. After ma
 2. The webserver generates a file called `cityScroller.pde`. If you make changes to this file, the results may be lost. Do not commit `cityScroller.pde`
 3. Save and Commit often!
 
+[Getting Started](GettingStarted.md)
+
 [Project Description](https://docs.google.com/document/d/1Vv7TAn-_sxPSjA6lv_ACV7W6QJHONLqpRuDaeFO7zgk/edit?usp=sharing)
 
 [City Scroller Template Explanation Videos](https://chadwickschool.learning.powerschool.com/jddevaughnbrown/apcomputerscienceprinciples/cms_page/view/35614477)
