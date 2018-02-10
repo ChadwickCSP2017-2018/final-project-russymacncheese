@@ -11,8 +11,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
 
     # Customize the amount of memory on the VM:
-    vb.memory = "1532"
-    vb.name = "cityscroller"
+    vb.memory = "512"
   end
   
   
@@ -26,12 +25,6 @@ Vagrant.configure("2") do |config|
 
      apt-get install apache2 -y   
      
-     add-apt-repository ppa:webupd8team/atom
-     apt-get update
-     apt install atom
-     apt-get install libxss1
-     
-  
    SHELL
   
 end
