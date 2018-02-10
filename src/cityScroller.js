@@ -73,6 +73,7 @@ class Skyline {
     //TODO: add enough buildings to fill the screen
     // hint - use xPosition and WINDOW_WIDTH to figure out when you have
     //        enough buildings
+    buildingList.add(new Building(0, random(30, 100)));
   }
 }
 
