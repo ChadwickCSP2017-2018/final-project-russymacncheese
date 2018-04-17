@@ -7,7 +7,7 @@ var LEFT_ARROW = '37';
 var RIGHT_ARROW = '39';
 
 Player main = new Player(100, 100);
-Door booty = new Door("left");
+Room one = new Room("bottom");
 
 void setup() {
   size(WINDOW_WIDTH, WINDOW_HEIGHT); //sets the size of the window
@@ -17,7 +17,7 @@ void setup() {
 void draw() {
   background(BACKGROUND_COLOR);
   main.drawAndUpdatePlayer();
-  booty.drawDoor();
+  one.buildDoors();
 }
 
 void keyPressed() {
@@ -80,7 +80,7 @@ class Door {
   }
 
 
-  void drawDoor() {
+  void drawDoor(ds) {
     if (doorSide == "left") {
       fill(color(0, 0, 0));
       rect(10, 200, 5, 30);
@@ -98,38 +98,56 @@ class Door {
 }
 
 class Room {
-  Arraylist < Door > doorList;
   var entryDoor;
   var sideCount;
 
   Room(var ed) {
-    doorList = new Arraylist < Door > ();
+  Arraylist < Door > doorList;
+    var doorList = new Arraylist < Door > ();
     entryDoor = ed;
     sideCount = 0;
   }
+  // void drawAndBuildRoom() {
+  //   drawRoom();
+  //   buildDoors();
+  // }
+  //
+  // void drawRoom() {
+  //
+  // }
 
   void buildDoors() {
-    if (entryDoor === "left") {
-      entryDoor.drawDoor("left");
-    } else if (entryDoor === "right") {
-      entryDoor.drawDoor("right");
-    } else if (entryDoor === "top") {
-      entryDoor.drawDoor("top");
-    } else if (entryDoor === "bottom") {
-      entryDoor.drawDoor("bottom");
-    }
     int[] sides = new int[4];
     sides[0] = "left";
     sides[1] = "right";
     sides[2] = "top";
     sides[3] = "bottom";
 
-    var j = random(0, 3);
-    while (sideCount <= j && )
-    for (var i = 0; i = j; i++) {
-      var door = doorList.get(i);
-      door.drawDoor();
+    if (entryDoor === "left") {
+      entryDoor.drawDoor("left");
+      side[0] = null;
+    } else if (entryDoor === "right") {
+      entryDoor.drawDoor("right");
+      side[1] = null;
+    } else if (entryDoor === "top") {
+      entryDoor.drawDoor("top");
+      side[2] = null;
+    } else if (entryDoor === "bottom") {
+      entryDoor.drawDoor("bottom");
+      side[3] = null;
     }
+int numSides = random(0, 3);
+int count = 0;
+while(count !== numSides) {
+  int pos = random(0, 3);
+  if(side[pos] !== null) {
+        var door = doorList.get(count);
+        door.drawDoor(side[pos]);
+    count++;
+    side[pos]= null;
+  }
   }
 
+  }
+}
   //DrawRoom, DrawDoor, Door Arraylist, Room Arraylist, ensure room to room
